@@ -104,16 +104,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-function initMap() {
-  var ntb = { lat: -8.65, lng: 117.283333 };
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 9,
-    center: ntb,
-  });
-  var marker = new google.maps.Marker({
-    position: ntb,
-    map: map,
-    title: 'Provinsi Nusa Tenggara Barat',
-  });
-}
