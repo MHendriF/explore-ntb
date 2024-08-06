@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pariwisata Nusa Tenggara Barat</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <h1>Pariwisata Nusa Tenggara Barat</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#map">Maps</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="home">
+        <h2>Selamat Datang di Nusa Tenggara Barat</h2>
+        <p>
+          NTB adalah surga wisata yang memiliki keindahan alam yang luar biasa,
+          mulai dari pantai yang indah, gunung yang megah, hingga budaya yang
+          kaya. Berikut adalah beberapa destinasi populer di NTB:
+        </p>
+        <div id="destinations-container"></div>
+        <h2>Lokasi Provinsi NTB di Peta</h2>
+        <div id="map"></div>
+      </article>
+      <aside id="about">
+        <h2 class="center">Informasi Provinsi NTB</h2>
+        <img src="assets/img/logo.svg" alt="Logo NTB" class="logo center" />
+        <ul>
+          <li><strong>Negara:</strong> Indonesia</li>
+          <li><strong>Hari Jadi:</strong> 18 November 1958</li>
+          <li><strong>Luas Provinsi:</strong> 18.572,90 km²</li>
+          <li><strong>Ibu Kota:</strong> Mataram</li>
+          <li><strong>Bahasa Daerah:</strong> Sasak, Sumbawa</li>
+          <li><strong>Makanan Khas:</strong> Sate Bulayak, Ayam Taliwang</li>
+          <li><strong>Kode Telepon:</strong> +62 370</li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2023 Made With <span>❤️</span> by MHF.</p>
+    </footer>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="modal-title" class="center"></h3>
+        <img id="modal-image" src="" alt="Modal Image" class="modal-img" />
+        <p id="modal-description"></p>
+      </div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
